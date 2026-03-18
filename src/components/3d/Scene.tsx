@@ -4,7 +4,7 @@ import { Preload } from '@react-three/drei';
 import { EffectComposer, Bloom, ChromaticAberration, Vignette } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
 import { ParticleField } from './ParticleField';
-import { ProfileImage } from './ProfileImage';
+
 import { AmbientParticles } from './AmbientParticles';
 
 export function Scene() {

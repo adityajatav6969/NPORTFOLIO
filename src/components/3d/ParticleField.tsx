@@ -68,8 +68,6 @@ export function ParticleField({ count = 8000 }: Props) {
       let { t, factor, speed, xFactor, yFactor, zFactor } = particle;
       t = particle.t += (speed - scrollVelocity.current); // Use slower reverse speed - scroll velocity (which is positive)
       
-      const a = Math.cos(t) + Math.sin(t * 0.1) / 10;
-      const b = Math.sin(t) + Math.cos(t * 0.2) / 10;
       const s = Math.cos(t) * 0.5 + 0.5;
 
       particle.mx += (mouseRef.current.x - particle.mx) * 0.005; // Slower mouse follow

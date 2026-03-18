@@ -16,7 +16,7 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as any },
   },
 };
 
@@ -163,7 +163,7 @@ export function Skills() {
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}
-                        transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+                        transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as any }}
                       />
                     </div>
                     <div className="skill-category-tag">{skill.category}</div>
